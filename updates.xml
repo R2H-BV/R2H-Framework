@@ -1,0 +1,59 @@
+<updates>
+    <update>
+        <name>R2H License Plugin</name>
+        <description></description>
+        <element>r2hlicense</element>
+        <type>plugin</type>
+        <folder>system</folder>
+        <version>1.0.2</version>
+        <client>0</client>
+        <infourl title="R2H License Plugin">https://github.com/R2H-BV/R2H-License-Plugin/releases/tag/v1.0.2</infourl>
+        <downloads>
+            <downloadurl type="full" format="zip">https://github.com/R2H-BV/R2H-License-Plugin/archive/v1.0.2.zip</downloadurl>
+        </downloads>
+        <tags>
+            <tag>stable</tag>
+        </tags>
+        <maintainer>R2H</maintainer>
+        <maintainerurl>https://r2h.nl/</maintainerurl>
+        <targetplatform name="joomla" version="[34].[0123456789]" />
+    </update>
+    <update>
+        <name>R2H License Plugin</name>
+        <description></description>
+        <element>r2hlicense</element>
+        <type>plugin</type>
+        <folder>system</folder>
+        <version>1.0.1</version>
+        <client>0</client>
+        <infourl title="R2H License Plugin">https://github.com/R2H-BV/R2H-License-Plugin/releases/tag/v1.0.1</infourl>
+        <downloads>
+            <downloadurl type="full" format="zip">https://github.com/R2H-BV/R2H-License-Plugin/archive/v1.0.1.zip</downloadurl>
+        </downloads>
+        <tags>
+            <tag>stable</tag>
+        </tags>
+        <maintainer>R2H</maintainer>
+        <maintainerurl>https://r2h.nl/</maintainerurl>
+        <targetplatform name="joomla" version="[34].[0123456789]" />
+    </update>
+    <update>
+        <name>R2H License Plugin</name>
+        <description></description>
+        <element>r2hlicense</element>
+        <type>plugin</type>
+        <folder>system</folder>
+        <version>1.0.0</version>
+        <client>0</client>
+        <infourl title="R2H License Plugin">https://github.com/R2H-BV/R2H-License-Plugin/releases/tag/v1.0.0</infourl>
+        <downloads>
+            <downloadurl type="full" format="zip">https://github.com/R2H-BV/R2H-License-Plugin/archive/v1.0.0.zip</downloadurl>
+        </downloads>
+        <tags>
+            <tag>stable</tag>
+        </tags>
+        <maintainer>R2H</maintainer>
+        <maintainerurl>https://r2h.nl/</maintainerurl>
+        <targetplatform name="joomla" version="[34].[0123456789]" />
+    </update>
+</updates>

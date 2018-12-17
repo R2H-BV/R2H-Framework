@@ -6,14 +6,14 @@
     method="upgrade">
 
 	<name>PLG_SYSTEM_R2HLICENSE</name>
-	<version>1.0.1</version>
+	<version>1.0.2</version>
 	<creationDate>17-12-2018</creationDate>
 
 	<author>R2H Marketing &amp; Internet Solutions</author>
 	<authorEmail>info@r2h.nl</authorEmail>
 	<authorUrl>https://r2h.nl/</authorUrl>
 
-	<copyright>Copyright (c) R2H 2018. All rights reserved</copyright>
+	<copyright>Copyright (c) R2H 2018. All rights reserved.</copyright>
 	<license>GNU/GPLv3</license>
 	<description>PLG_SYSTEM_R2HLICENSE_DESC</description>
 
@@ -30,4 +30,8 @@
 		<language tag="nl-NL">nl-NL/nl-NL.plg_system_r2hlicense.ini</language>
 		<language tag="nl-NL">nl-NL/nl-NL.plg_system_r2hlicense.sys.ini</language>
 	</languages>
+
+	<updateservers>
+		<server type="extension" priority="2" name="R2H License Plugin">https://raw.githubusercontent.com/R2H-BV/R2H-License-Plugin/master/updates.xml</server>
+	</updateservers>
 </extension>
