@@ -1,0 +1,36 @@
+<?php
+/**
+ * R2H License Plugin
+ * @author      Michael Snoeren <michael@r2h.nl>
+ * @copyright   R2H Marketing & Internet Solutions © 2018
+ * @license     GNU/GPLv3
+ */
+
+use Joomla\CMS\Factory;
+
+defined('_JEXEC') or die;
+
+class PlgSystemR2HLicenseInstallerScript
+{
+    /**
+     * Enable the plugin after installation.
+     * @access  public
+     * @return  boolean
+     */
+    public function postflight()
+    {
+        $db = Factory::getDbo();
+        $query = $db->getQuery(true);
+
+        $query
+        ->update('#__extensions')
+        ->set($db->qn('enabled') . ' = 1')
+        ->where([
+            $db->qn('type') . ' = ' . $db->q('plugin'),
+            $db->qn('element') . ' = ' . $db->q('r2hlicense')
+        ]);
+
+        $db->setQuery($query);
+        return (bool) $db->execute();
+    }
+}
