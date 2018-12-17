@@ -44,6 +44,9 @@ class PlgSystemR2HLicense extends CMSPlugin
             $uri->setVar('key', $key);
         }
 
+        // Update the url with the new URL.
+        $url = $uri->toString();
+
         return true;
     }
 
