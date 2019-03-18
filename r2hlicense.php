@@ -45,6 +45,8 @@ class PlgSystemR2HLicense extends CMSPlugin
         }
 
         // Update the url with the new URL.
+        $siteUri = Uri::getInstance();
+        $uri->setVar('domain', $siteUri->getHost());
         $url = $uri->toString();
 
         return true;
