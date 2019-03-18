@@ -2,7 +2,7 @@
 /**
  * R2H License Plugin
  * @author      Michael Snoeren <michael@r2h.nl>
- * @copyright   R2H Marketing & Internet Solutions © 2018
+ * @copyright   R2H Marketing & Internet Solutions © 2019
  * @license     GNU/GPLv3
  */
 
@@ -36,6 +36,12 @@ class PlgSystemR2HLicense extends CMSPlugin
             return true;
         }
 
+        // Do not proceed if the package is a zip.
+        $extension = strtolower(pathinfo($url, PATHINFO_EXTENSION));
+        if (in_array($extension, ['zip', 'rar'])) {
+            return true;
+        }
+
         // Get the key from the installation.
         $key = $this->getKey();
 
@@ -45,8 +51,6 @@ class PlgSystemR2HLicense extends CMSPlugin
         }
 
         // Update the url with the new URL.
-        $siteUri = Uri::getInstance();
-        $uri->setVar('domain', $siteUri->getHost());
         $url = $uri->toString();
 
         return true;

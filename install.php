@@ -2,7 +2,7 @@
 /**
  * R2H License Plugin
  * @author      Michael Snoeren <michael@r2h.nl>
- * @copyright   R2H Marketing & Internet Solutions © 2018
+ * @copyright   R2H Marketing & Internet Solutions © 2019
  * @license     GNU/GPLv3
  */
 
