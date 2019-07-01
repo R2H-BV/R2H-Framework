@@ -1,4 +1,6 @@
 <?php
+declare(strict_types = 1);
+
 /**
  * R2H License Plugin
  * @author      Michael Snoeren <michael@r2h.nl>
@@ -8,25 +10,25 @@
 
 defined('_JEXEC') or die;
 
-use Joomla\CMS\Plugin\CMSPlugin;
 use Joomla\CMS\Uri\Uri;
+use Joomla\CMS\Plugin\CMSPlugin;
 
 class PlgSystemR2HLicense extends CMSPlugin
 {
     /**
-     * @var     boolean $autoloadLanguage Autoloads the language files.
-     * @access  protected
+     * @var    boolean $autoloadLanguage Autoloads the language files.
+     * @access protected
      */
     protected $autoloadLanguage = true;
 
     /**
      * Appends the license key to the url to allow purchased packages to be downloaded.
-     * @param   string $url     The url of the package.
-     * @param   array  $headers Additional headers for the request.
-     * @access  public
-     * @return  boolean
+     * @param  string $url     The url of the package.
+     * @param  array  $headers Additional headers for the request.
+     * @access public
+     * @return boolean
      */
-    public function onInstallerBeforePackageDownload(&$url, &$headers)
+    public function onInstallerBeforePackageDownload(string &$url, array &$headers)
     {
         $uri = Uri::getInstance($url);
         $host = strtolower($uri->getHost());

@@ -1,4 +1,6 @@
 <?php
+declare(strict_types = 1);
+
 /**
  * R2H License Plugin
  * @author      Michael Snoeren <michael@r2h.nl>
@@ -38,7 +40,7 @@ class PlgSystemR2HLicenseInstallerScript
         ->set($db->qn('enabled') . ' = 1')
         ->where([
             $db->qn('type') . ' = ' . $db->q('plugin'),
-            $db->qn('element') . ' = ' . $db->q('r2hlicense')
+            $db->qn('element') . ' = ' . $db->q('r2hlicense'),
         ]);
 
         $db->setQuery($query);
