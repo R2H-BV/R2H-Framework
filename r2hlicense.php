@@ -1,32 +1,33 @@
 <?php
-declare(strict_types = 1);
+
+declare(strict_types=1);
 
 /**
- * R2H License Plugin
+ * R2H License Plugin.
+ *
  * @author      Michael Snoeren <michael@r2h.nl>
  * @copyright   R2H Marketing & Internet Solutions © 2019
  * @license     GNU/GPLv3
  */
-
 defined('_JEXEC') or die;
 
-use Joomla\CMS\Uri\Uri;
 use Joomla\CMS\Plugin\CMSPlugin;
+use Joomla\CMS\Uri\Uri;
 
 class PlgSystemR2HLicense extends CMSPlugin
 {
     /**
-     * @var    boolean $autoloadLanguage Autoloads the language files.
-     * @access protected
+     * @var bool Autoloads the language files.
      */
     protected $autoloadLanguage = true;
 
     /**
      * Appends the license key to the url to allow purchased packages to be downloaded.
-     * @param  string $url     The url of the package.
-     * @param  array  $headers Additional headers for the request.
-     * @access public
-     * @return boolean
+     *
+     * @param string $url     The url of the package.
+     * @param array  $headers Additional headers for the request.
+     *
+     * @return bool
      */
     public function onInstallerBeforePackageDownload(string &$url, array &$headers)
     {
@@ -60,16 +61,16 @@ class PlgSystemR2HLicense extends CMSPlugin
 
     /**
      * Get the key from this installation.
-     * @access  protected
-     * @return  string
+     *
+     * @return string
      */
     protected function getKey(): string
     {
         jimport('joomla.filesystem.file');
 
         // Set the paths to the known locations of the key.
-        $oldLocation = JPATH_LIBRARIES . '/r2hframework/license.key';
-        $newLocation = JPATH_ROOT . '/plugins/system/r2hlicense/license.key';
+        $oldLocation = JPATH_LIBRARIES.'/r2hframework/license.key';
+        $newLocation = JPATH_ROOT.'/plugins/system/r2hlicense/license.key';
 
         // Determine the file where it's located at.
         $file = JFile::exists($oldLocation)
