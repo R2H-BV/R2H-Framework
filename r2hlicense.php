@@ -1,6 +1,5 @@
 <?php
-
-declare(strict_types=1);
+declare(strict_types = 1);
 
 /**
  * R2H License Plugin.
@@ -11,8 +10,8 @@ declare(strict_types=1);
  */
 defined('_JEXEC') or die;
 
-use Joomla\CMS\Plugin\CMSPlugin;
 use Joomla\CMS\Uri\Uri;
+use Joomla\CMS\Plugin\CMSPlugin;
 
 class PlgSystemR2HLicense extends CMSPlugin
 {
@@ -27,7 +26,7 @@ class PlgSystemR2HLicense extends CMSPlugin
      * @param string $url     The url of the package.
      * @param array  $headers Additional headers for the request.
      *
-     * @return bool
+     * @return boolean
      */
     public function onInstallerBeforePackageDownload(string &$url, array &$headers)
     {
@@ -69,8 +68,8 @@ class PlgSystemR2HLicense extends CMSPlugin
         jimport('joomla.filesystem.file');
 
         // Set the paths to the known locations of the key.
-        $oldLocation = JPATH_LIBRARIES.'/r2hframework/license.key';
-        $newLocation = JPATH_ROOT.'/plugins/system/r2hlicense/license.key';
+        $oldLocation = JPATH_LIBRARIES . '/r2hframework/license.key';
+        $newLocation = JPATH_ROOT . '/plugins/system/r2hlicense/license.key';
 
         // Determine the file where it's located at.
         $file = JFile::exists($oldLocation)

@@ -1,0 +1,18 @@
+{
+    "name": "r2h/r2h-license",
+    "description": "R2H license plugin for Joomla.",
+    "type": "joomla-plugin",
+    "require": {},
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.5",
+        "slevomat/coding-standard": "^6.1"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Michael",
+            "email": "michael@r2h.nl"
+        }
+    ],
+    "minimum-stability": "stable"
+}

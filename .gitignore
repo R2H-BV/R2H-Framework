@@ -1,2 +1,4 @@
 *.zip
 license.key
+
+/vendor/
