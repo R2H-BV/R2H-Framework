@@ -8,7 +8,6 @@ declare(strict_types = 1);
  * @copyright   R2H Marketing & Internet Solutions © 2019
  * @license     GNU/GPLv3
  */
-defined('_JEXEC') or die;
 
 use Joomla\CMS\Uri\Uri;
 use Joomla\CMS\Plugin\CMSPlugin;

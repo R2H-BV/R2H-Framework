@@ -4,8 +4,9 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e50f305c6626a0de8c4bc64c54250bfb",
-    "packages": [
+    "content-hash": "743c911af46b2b5dcda8e587d39e1942",
+    "packages": [],
+    "packages-dev": [
         {
             "name": "phpstan/phpdoc-parser",
             "version": "0.4.3",
@@ -148,7 +149,6 @@
             "time": "2020-01-30T22:20:29+00:00"
         }
     ],
-    "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": [],

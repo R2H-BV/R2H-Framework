@@ -11,8 +11,6 @@ declare(strict_types = 1);
 
 use Joomla\CMS\Factory;
 
-defined('_JEXEC') or die;
-
 class PlgSystemR2HLicenseInstallerScript
 {
     /**
