@@ -36,10 +36,10 @@ class PlgSystemR2HLicenseInstallerScript
 
         $query
             ->update('#__extensions')
-            ->set($db->qn('enabled').' = 1')
+            ->set($db->qn('enabled') . ' = 1')
             ->where([
-                $db->qn('type').' = '.$db->q('plugin'),
-                $db->qn('element').' = '.$db->q('r2hlicense'),
+                $db->qn('type') . ' = ' . $db->q('plugin'),
+                $db->qn('element') . ' = ' . $db->q('r2hlicense'),
             ]);
 
         return (bool) $db
